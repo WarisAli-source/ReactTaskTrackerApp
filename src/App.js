@@ -1,5 +1,4 @@
 import {useState,useEffect} from 'react'
-import {BrowserRouter as Router, Route} from 'react-router-dom'
 import Header from "./components/Header";
 import Tasks from "./components/Tasks";
 import AddTask from './components/AddTask';
@@ -48,7 +47,7 @@ function App() {
 
 
   return (
-    <Router>
+
     <div className="container">
      <Header 
      onAdd = {() => setShowAddTask(!showAddTask)} 
@@ -62,7 +61,6 @@ function App() {
      
       
     </div>
-    </Router>
   );
 }
 
